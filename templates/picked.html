@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> First </title>
+</head>
+
+<body>
+    <h1> Dictionary </h1>
+    <p>
+        <h2>
+            {%if is_real_word%}
+                {{word}} is a real word!!
+            {%endif%}
+        </h2>
+        {{count}} words with prefix {{word}}!
+        <ul>
+            {%for i in list%}
+            <li><a href="/dictionary/{{word}}{{i}}">{{word}}{{i}}</a></li>
+            {%endfor%}
+        </ul>
+    </p>
+
+</body>
+
+</html>

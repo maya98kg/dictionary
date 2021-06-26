@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Dictionary</h1>
+        <p>Choose a letter! </p>
+        <ul>
+            {%for l in list%}
+            <li> <a href="/dictionary/{{l}}">{{l}}</a> </li>
+            {%endfor%}
+        </ul>
+    </body>
+</html>
